@@ -80,12 +80,12 @@ Here is the [link](https://www.udacity.com/course/viewer#!/c-nd001/l-2735848561/
     
 5. Improve PageSpeed Score of index.html above 90
 
-  - Optimize Google Fonts using Web Font Loader, asynchronously load google web font to prevent it from being render blocking;
-  - Inline and minify CSS in development code by using grunt-inline plugin;
-  - Async analytics.js as it doesn't modify the DOM or the CSSOM;
-  - Inline and minify javaScript, and put all the scripts in the bottom of page by using grunt-inline plugin;
-  - Minify html by using grunt-contrib-htmlmin plugin;
-  - Minify images by using grunt-contrib-imagemin plugin;
+  * Optimize Google Fonts using Web Font Loader, asynchronously load google web font to prevent it from being render blocking;
+  * Inline and minify CSS in development code by using grunt-inline plugin;
+  * Async analytics.js as it doesn't modify the DOM or the CSSOM;
+  * Inline and minify javaScript, and put all the scripts in the bottom of page by using grunt-inline plugin;
+  * Minify html by using grunt-contrib-htmlmin plugin;
+  * Minify images by using grunt-contrib-imagemin plugin;
   
 #  Smooth Browser Animations
 1. Ensure a consistent frame rate at 60fps on browser scroll
