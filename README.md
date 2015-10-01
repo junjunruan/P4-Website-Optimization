@@ -58,8 +58,9 @@ Here is the [link](https://www.udacity.com/course/viewer#!/c-nd001/l-2735848561/
   5) Install and configure all the required Grunt plugins
   
     ```
-    npm install grunt-contrib-copy grunt-inline grunt-contrib-htmlmin grunt-contrib-imagemin --save-dev
+    npm install grunt-contrib-copy grunt-inline grunt-contrib-htmlmin grunt-contrib-imagemin@0.3.0 --save-dev
     ``` 
+    Note: there are bugs in the newest version of grunt-contrib-imagemin, so here the old version is installed.
       
     After all the Grunt plugins are installed successfully, all the modules will be in the node_modules folder.
       
