@@ -80,15 +80,50 @@ Here is the [link](https://www.udacity.com/course/viewer#!/c-nd001/l-2735848561/
     
 5. Improve PageSpeed Score of index.html above 90
 
-  * Optimize Google Fonts using Web Font Loader, asynchronously load google web font to prevent it from being render blocking;
-  * Inline and minify CSS in development code by using grunt-inline plugin;
-  * Async analytics.js as it doesn't modify the DOM or the CSSOM;
-  * Inline and minify javaScript, and put all the scripts in the bottom of page by using grunt-inline plugin;
-  * Minify html by using grunt-contrib-htmlmin plugin;
-  * Minify images by using grunt-contrib-imagemin plugin;
+  - Optimize Google Fonts using Web Font Loader, asynchronously load google web font to prevent it from being render blocking;
+  - Inline and minify CSS in development code by using grunt-inline plugin;
+  - Async analytics.js as it doesn't modify the DOM or the CSSOM;
+  - Inline and minify javaScript, and put all the scripts in the bottom of page by using grunt-inline plugin;
+  - Minify html by using grunt-contrib-htmlmin plugin;
+  - Minify images by using grunt-contrib-imagemin plugin;
   
 #  Smooth Browser Animations
 1. Ensure a consistent frame rate at 60fps on browser scroll
+Before optimization, recode the timeline and get the original frame rate when scrolling pizza.html:
+
+![image](http://i.imgur.com/LU8FisP.png)
+
+After optimization, all the frame rate is below 60fps. The result is as follow:
+
+![image](http://i.imgur.com/7tTJu0B.png)
+
+What I did for optimization:
+1. Optimize the javaScript bottle neck (the yellow bar)
+  
+    Open main.js file, update the code inside updatePositions function.
+
+  - Change document.querySelectorAll('.mover') to document.getElementsByClassName('mover')
+
+    Because getElementsByClassName is faster than querySelectorAll.
+
+  - Move document.body.scrollTop / 1250 outside of for loop
+
+    As it is a constant, we don't need to calculate repeatly in each iterate of the for loop.
+
+  - Calculate phase outside of loop.
+
+    As i%5 only has 5 unique value, so we can calculate phase and store the value in an array outside of loop.
+
+2. Optimize paint bottle neck (the green bar)
+
+    Open main.js file, update the code inside document.addEventListener('DOMContentLoaded', function() {}.
+
+  - Create an array variable that has a reference to all of the pizzas with id "movingPizzas1", and change querySelector to getElementById
+  - Change the number of  moving pizzas created in the background from 200 to 50, as 200 pizzas are too much for the page
+
+    Inside CSS file (views -> css -> style.css)
+
+  - Add code `backface-visibility: hidden` in the "mover" class to reduce paint time
 
 
 
