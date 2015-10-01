@@ -21,7 +21,9 @@ This is the fourth project of Udacity Front-End Web Developer Nanodegree.
   $> ngrok http 80
   ```
   
+  
 3. Improve PageSpeed Score above 90
+
   Grunt can be used for optimizing files such as minifying JavaScript, CSS files and optimizing images etc.
 
 
