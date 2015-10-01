@@ -93,7 +93,7 @@ Before optimization, recode the timeline and get the original frame rate when sc
 
 ![image](http://i.imgur.com/LU8FisP.png)
 
-After optimization, all the frame rate is below 60fps. The result is as follow:
+After optimization, all the frame rates are below 60fps. The result is as follows:
 
 ![image](http://i.imgur.com/7tTJu0B.png)
 
@@ -128,18 +128,19 @@ What I did for optimization:
 
 2. Make time to resize pizzas less than 5ms in pizza.html
 
-Click the bar on the pizza.html page, check the time to resize the pizza in the console of chrome developer tools:
+  Click the bar on the pizza.html page, check the time to resize the pizza in the console of chrome developer tools:
 
-- Before optimization, time to resize the pizza is `166.27499999999964ms`
+  - Before optimization, time to resize the pizza is `166.27499999999964ms`
 
-- After optimization, time to resize the pizza is improved to `1.1499999999068677ms`
+  - After optimization, time to resize the pizza is improved to `1.1499999999068677ms`
 
-Here is what I did for optimization:
+  Here is what I did for optimization:
 
-Open main.js file, update the code inside changePizzaSizes function.
+  Open main.js file, update the code inside changePizzaSizes function.
 
-- Create an array variable that has a reference to all of the pizzas with class name "randomPizzaContainer", and change querySelectorAll to getElementsByClassName
-- Calculate dx and newwidth outside of for loop, as they are only related to size
+  - Create an array variable that has a reference to all of the pizzas with class name "randomPizzaContainer"
+  - Change querySelectorAll to getElementsByClassName
+  - Calculate dx and newwidth outside of for loop, as they are only related to size
 
 
 
