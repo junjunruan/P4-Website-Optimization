@@ -98,9 +98,10 @@ After optimization, all the frame rate is below 60fps. The result is as follow:
 ![image](http://i.imgur.com/7tTJu0B.png)
 
 What I did for optimization:
+
 1. Optimize the javaScript bottle neck (the yellow bar)
   
-    Open main.js file, update the code inside updatePositions function.
+  Open main.js file, update the code inside updatePositions function
 
   - Change document.querySelectorAll('.mover') to document.getElementsByClassName('mover')
 
@@ -116,15 +117,29 @@ What I did for optimization:
 
 2. Optimize paint bottle neck (the green bar)
 
-    Open main.js file, update the code inside document.addEventListener('DOMContentLoaded', function() {}.
+  Open main.js file, update the code inside document.addEventListener('DOMContentLoaded', function() {}.
 
   - Create an array variable that has a reference to all of the pizzas with id "movingPizzas1", and change querySelector to getElementById
   - Change the number of  moving pizzas created in the background from 200 to 50, as 200 pizzas are too much for the page
 
-    Inside CSS file (views -> css -> style.css)
+  Inside CSS file (views -> css -> style.css)
 
   - Add code `backface-visibility: hidden` in the "mover" class to reduce paint time
 
+2. Make time to resize pizzas less than 5ms in pizza.html
+
+Click the bar on the pizza.html page, check the time to resize the pizza in the console of chrome developer tools:
+
+- Before optimization, time to resize the pizza is `166.27499999999964ms`
+
+- After optimization, time to resize the pizza is improved to `1.1499999999068677ms`
+
+Here is what I did for optimization:
+
+Open main.js file, update the code inside changePizzaSizes function.
+
+- Create an array variable that has a reference to all of the pizzas with class name "randomPizzaContainer", and change querySelectorAll to getElementsByClassName
+- Calculate dx and newwidth outside of for loop, as they are only related to size
 
 
 
