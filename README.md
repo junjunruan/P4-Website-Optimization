@@ -1,8 +1,8 @@
 # Project 4 - Website Optimization
 This is the fourth project of Udacity Front-End Web Developer Nanodegree. Two goals of this project is:
 
-- Optimize index.html to achieve a pagespeed score of 90;
-- Smooth browser animations and efficient code execution in main.js for the Pizzas page under /view/pizza.html;
+- Improve PageSpeed score;
+- Smooth browser animations;
 
 Here is the [link](https://www.udacity.com/course/viewer#!/c-nd001/l-2735848561/m-2686388535) to the rubric for the class.
 
