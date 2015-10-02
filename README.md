@@ -66,6 +66,7 @@ Here is the [link](https://www.udacity.com/course/viewer#!/c-nd001/l-2735848561/
     
     - In order to use grunt-responsive-images, either GraphicsMagick or Imagemagick CLI tools should be installed.      
       
+    
     After all the Grunt plugins are installed successfully, all the modules will be in the node_modules folder.
       
     Then create a file named gruntfile.js, write our grunt wrapper function. Inside the function, write some code to load, configure and register our task.
@@ -77,11 +78,11 @@ Here is the [link](https://www.udacity.com/course/viewer#!/c-nd001/l-2735848561/
     }
     ```
       
-  To run Grunt, type this command:
+    To run Grunt, type this command:
     
-  ```
-  grunt
-  ```
+    ```
+    grunt
+    ```
     
 5. Improve PageSpeed Score of index.html above 90
 
