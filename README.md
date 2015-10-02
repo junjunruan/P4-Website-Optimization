@@ -102,6 +102,7 @@ After optimization, the score of loading index page is: mobile ![image](http://i
   - Inline and minify javaScript, and put all the scripts in the bottom of page by using grunt-inline plugin;
   - Minify html by using grunt-contrib-htmlmin plugin;
   - Minify images by using grunt-contrib-imagemin plugin;
+  - Produces pizzeria.jpg images at different sizes by using grunt-responsive-images plugin. In order to pick up the right image for a device, add srcset to the corresponding <img> tag in pizza.html.
   
 #  Smooth Browser Animations
 
