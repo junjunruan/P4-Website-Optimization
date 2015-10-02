@@ -1,5 +1,7 @@
 # Project 4 - Website Optimization
-This is the fourth project of Udacity Front-End Web Developer Nanodegree. Two goals of this project is:
+This is the fourth project of Udacity Front-End Web Developer Nanodegree. All the source code is in src folder, the code after optimization is in dist foler.
+
+Two goals of this project is:
 
 - Improve PageSpeed score;
 - Smooth browser animations;
