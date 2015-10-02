@@ -1,5 +1,11 @@
 # Project 4 - Website Optimization
-This is the fourth project of Udacity Front-End Web Developer Nanodegree. All the source code is in src folder, the code after optimization is in dist foler.
+This is the fourth project of Udacity Front-End Web Developer Nanodegree.
+
+Github folders:
+
+- frontend-nanodegree-mobile-portfolio: clone from udacity repository, which should be optimized;
+- src: update some code for optimization, changes and comments can be clearly seen;
+- dist: final product after running grunt.
 
 Two goals of this project is:
 
@@ -99,7 +105,7 @@ After optimization, the score of loading index page is: mobile ![image](http://i
     
     ![image](http://i.imgur.com/mBMdeG3.png)
     
-5. Improve PageSpeed Score of index.html above 90
+  5. Improve PageSpeed Score of index.html above 90
 
   - Optimize Google Fonts using Web Font Loader, asynchronously load google web font to prevent it from being render blocking;
   - Inline and minify CSS in development code by using grunt-inline plugin;
