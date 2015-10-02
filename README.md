@@ -10,7 +10,7 @@ Here is the [link](https://www.udacity.com/course/viewer#!/c-nd001/l-2735848561/
 
 Before optimization, the score of loading index page is: mobile 28, desktop 82.
 
-After optimization, the score of loading index page is: mobile ![image](http://i.imgur.com/HkYkcMs.png?1), desktop 82.
+After optimization, the score of loading index page is: mobile ![image](http://i.imgur.com/gOWkUWE.png?1), desktop ![image](http://i.imgur.com/HkYkcMs.png?1).
 
 1. Run a local web server
   
