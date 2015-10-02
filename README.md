@@ -7,6 +7,11 @@ This is the fourth project of Udacity Front-End Web Developer Nanodegree. Two go
 Here is the [link](https://www.udacity.com/course/viewer#!/c-nd001/l-2735848561/m-2686388535) to the rubric for the class.
 
 # Improve PageSpeed Score
+
+Before optimization, the score of loading index page is: mobile 28, desktop 82.
+
+After optimization, the score of loading index page is: mobile ![image](http://i.imgur.com/HkYkcMs.png?1), desktop 82.
+
 1. Run a local web server
   
   Downlaod [python](https://www.python.org/downloads/), open command window, type the following code:
@@ -29,7 +34,7 @@ Here is the [link](https://www.udacity.com/course/viewer#!/c-nd001/l-2735848561/
   ![image](http://i.imgur.com/Pwiqiq7.png)
   
 3.  Test the page speed of index.html through [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
-  Copy the forwarding url in the command window and paste it to PageSpeed Insigths, then get the test score. The original score of loading index page before optimization is: mobile 28, desktop 82.
+  Copy the forwarding url in the command window and paste it to PageSpeed Insigths, then scores will be shown.
   
 4. Setup Grunt environment (follow the instructions on this [link](https://discussions.udacity.com/t/grunt-and-setting-up-a-grunt-workflow-intermediate/21984))
 
@@ -105,7 +110,7 @@ After optimization, all the frame rates are below 60fps. The result is as follow
 
 What I did for optimization:
 
-1. Optimize the javaScript bottle neck (the yellow bar)
+1) Optimize the javaScript bottle neck (the yellow bar)
   
   Open main.js file, update the code inside updatePositions function
 
@@ -121,7 +126,7 @@ What I did for optimization:
 
     As i%5 only has 5 unique value, so we can calculate phase and store the value in an array outside of loop.
 
-2. Optimize paint bottle neck (the green bar)
+2) Optimize paint bottle neck (the green bar)
 
   Open main.js file, update the code inside document.addEventListener('DOMContentLoaded', function() {}.
 
