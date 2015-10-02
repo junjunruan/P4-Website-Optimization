@@ -12,6 +12,7 @@ Before optimization, the score of loading index page is: mobile 28, desktop 82.
 
 After optimization, the score of loading index page is: mobile ![image](http://i.imgur.com/gOWkUWE.png?1), desktop ![image](http://i.imgur.com/HkYkcMs.png?1).
 
+
 1. Run a local web server
   
   Downlaod [python](https://www.python.org/downloads/), open command window, type the following code:
@@ -21,6 +22,7 @@ After optimization, the score of loading index page is: mobile ![image](http://i
   $> python -m SimpleHTTPServer 80
   ```
   Then Open a browser and visit localhost:80
+
 
 2. Expose a local web server to the internet
 
@@ -33,9 +35,11 @@ After optimization, the score of loading index page is: mobile ![image](http://i
   
   ![image](http://i.imgur.com/Pwiqiq7.png)
   
+  
 3.  Test the page speed of index.html through [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
   Copy the forwarding url in the command window and paste it to PageSpeed Insigths, then scores will be shown.
   
+
 4. Setup Grunt environment (follow the instructions on this [link](https://discussions.udacity.com/t/grunt-and-setting-up-a-grunt-workflow-intermediate/21984))
 
   Grunt can be used for optimizing files such as minifying JavaScript, CSS files and optimizing images etc.
@@ -88,6 +92,7 @@ After optimization, the score of loading index page is: mobile ![image](http://i
     ```
     grunt
     ```
+ 
     
 5. Improve PageSpeed Score of index.html above 90
 
@@ -99,6 +104,7 @@ After optimization, the score of loading index page is: mobile ![image](http://i
   - Minify images by using grunt-contrib-imagemin plugin;
   
 #  Smooth Browser Animations
+
 1. Ensure a consistent frame rate at 60fps on browser scroll
 Before optimization, recode the timeline and get the original frame rate when scrolling pizza.html:
 
@@ -136,6 +142,7 @@ What I did for optimization:
   Inside CSS file (views -> css -> style.css)
 
   - Add code `backface-visibility: hidden` in the "mover" class to reduce paint time
+
 
 2. Make time to resize pizzas less than 5ms in pizza.html
 
