@@ -62,9 +62,9 @@ Here is the [link](https://www.udacity.com/course/viewer#!/c-nd001/l-2735848561/
     ``` 
       Note:
     
-        - There are bugs in the newest version of grunt-contrib-imagemin, so here the old version is installed.
+      - There are bugs in the newest version of grunt-contrib-imagemin, so here the old version is installed.
     
-        - In order to use grunt-responsive-images, either GraphicsMagick or Imagemagick CLI tools should be installed.      
+      - In order to use grunt-responsive-images, either GraphicsMagick or Imagemagick CLI tools should be installed.      
       
     After all the Grunt plugins are installed successfully, all the modules will be in the node_modules folder.
       
