@@ -95,7 +95,7 @@ After optimization, the score of loading index page is: mobile ![image](http://i
     
     The result is:
     
-    [!image](http://i.imgur.com/58NmJBk.png)
+    ![image](http://i.imgur.com/58NmJBk.png)
     
 5. Improve PageSpeed Score of index.html above 90
 
