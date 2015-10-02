@@ -1,0 +1,13 @@
+{
+  "name": "Website Optimization",
+  "version": "0.1.0",
+  "author": "Junjun Ruan",
+  "devDependencies": {
+    "grunt": "~0.4.6-0",
+    "grunt-contrib-copy": "~0.8.1",
+    "grunt-inline": "~0.3.4",
+    "grunt-contrib-htmlmin": "~0.5.0",
+    "grunt-contrib-imagemin": "~0.9.4",
+    "grunt-responsive-images": "~0.1.6"
+  }
+}
