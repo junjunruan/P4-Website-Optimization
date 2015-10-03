@@ -97,15 +97,15 @@ module.exports = function(grunt) {
           dest: 'dist/'                  // Destination path prefix
         }]
       }
-    },
-    responsive_images: {
-    myTask: {
-      options: {},
-      files: {
-        'dist/views/images/pizzeria.jpg': 'src/views/images/pizzeria.jpg'
-      }
     }
-  }
+  //   responsive_images: {
+  //   myTask: {
+  //     options: {},
+  //     files: {
+  //       'dist/views/images/pizzeria.png': 'src/views/images/pizzeria.png'
+  //     }
+  //   }
+  // }
   });
   // Load the plugins
   grunt.loadNpmTasks('grunt-contrib-copy');
@@ -117,8 +117,8 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-processhtml');
   // grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-responsive-images');
+  // grunt.loadNpmTasks('grunt-responsive-images');
   // Default tasks.
   // grunt.registerTask('default', ['copy', 'concat', 'cssmin', 'processhtml', 'htmlmin', 'uglify', 'imagemin']);
-  grunt.registerTask('default', ['copy', 'inline', 'htmlmin', 'imagemin','responsive_images']);
+  grunt.registerTask('default', ['copy', 'inline', 'htmlmin', 'imagemin']);
 };
