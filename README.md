@@ -128,7 +128,7 @@ What I did for optimization:
 
 1) Optimize the javaScript bottle neck (the yellow bar)
   
-   Open main.js file, update the code inside updatePositions function
+    Open main.js file, update the code inside updatePositions function
 
   - Change document.querySelectorAll('.mover') to document.getElementsByClassName('mover')
 
@@ -148,7 +148,7 @@ What I did for optimization:
 
 2) Optimize paint bottle neck (the green bar)
 
-   Open main.js file, update the code inside document.addEventListener('DOMContentLoaded', function() {}.
+  Open main.js file, update the code inside document.addEventListener('DOMContentLoaded', function() {}.
 
   - Create an array variable that has a reference to all of the pizzas with id "movingPizzas1", and change querySelector to getElementById
   - Change the number of  moving pizzas created in the background from 200 to 50, as 200 pizzas are too much for the page
