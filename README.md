@@ -75,13 +75,11 @@ After optimization, the score of loading index page is: mobile ![image](http://i
   5) Install and configure all the required Grunt plugins
   
     ```
-    npm install grunt-contrib-copy grunt-inline grunt-contrib-htmlmin grunt-contrib-imagemin@0.3.0 grunt-responsive-images --save-dev
+    npm install grunt-contrib-copy grunt-inline grunt-contrib-htmlmin grunt-contrib-imagemin@0.3.0 --save-dev
     ``` 
     Note:
     
     - There are bugs in the newest version of grunt-contrib-imagemin, so here the old version is installed.
-    
-    - In order to use grunt-responsive-images, either GraphicsMagick or Imagemagick CLI tools should be installed.      
       
     
     After all the Grunt plugins are installed successfully, all the modules will be in the node_modules folder.
@@ -103,7 +101,7 @@ After optimization, the score of loading index page is: mobile ![image](http://i
     
     The result is:
     
-    ![image](http://i.imgur.com/mBMdeG3.png)
+    ![image](http://i.imgur.com/v6tJFQB.png)
     
   5. Improve PageSpeed Score of index.html above 90
 
