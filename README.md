@@ -141,6 +141,10 @@ What I did for optimization:
   - Calculate phase outside of loop.
 
     As i%5 only has 5 unique value, so we can calculate phase and store the value in an array outside of loop.
+  
+  - Calculate iterms.length outside of for loop
+  
+    declear a variable: var itemsLen = items.length;
 
 2) Optimize paint bottle neck (the green bar)
 
