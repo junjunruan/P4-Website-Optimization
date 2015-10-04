@@ -3,7 +3,7 @@ This is the fourth project of Udacity Front-End Web Developer Nanodegree.
 
 Github folders:
 
-- frontend-nanodegree-mobile-portfolio: clone from udacity repository, which should be optimized;
+- frontend-nanodegree-mobile-portfolio: clone from udacity repository, which should be optimized. It can be visited [here](http://junjunruan.github.io/P4-Website-Optimization/dist/);
 - src: update some code for optimization, changes and comments can be clearly seen;
 - dist: final product after running grunt.
 
