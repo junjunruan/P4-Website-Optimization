@@ -14,7 +14,7 @@ Two goals of this project is:
 
 Here is the [link](https://www.udacity.com/course/viewer#!/c-nd001/l-2735848561/m-2686388535) to the rubric for the class.
 
-### Improve PageSpeed Score
+## Improve PageSpeed Score
 
 Before optimization, the score of loading index page is: mobile 28, desktop 82.
 
@@ -117,7 +117,7 @@ After optimization, the score of loading index page is: mobile ![image](http://i
   - Minify images by using grunt-contrib-imagemin plugin;
   - Produces pizzeria.jpg images at different sizes by using grunt-responsive-images plugin. In order to pick up the right image for a device, add srcset to the corresponding <img> tag in pizza.html.
   
-###  Smooth Browser Animations
+##  Smooth Browser Animations
 
 1. Ensure a consistent frame rate at 60fps on browser scroll
 Before optimization, recode the timeline and get the original frame rate when scrolling pizza.html:
