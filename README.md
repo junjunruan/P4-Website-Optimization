@@ -77,10 +77,14 @@ After optimization, the score of loading index page is: mobile ![image](http://i
     ```
     npm install grunt-contrib-copy grunt-inline grunt-contrib-htmlmin grunt-contrib-imagemin@0.3.0 --save-dev
     ``` 
+    ``` 
+    npm install jsdoc
+    ``` 
+    
     Note:
     
     - There are bugs in the newest version of grunt-contrib-imagemin, so here the old version is installed.
-      
+    - JSDoc is API documentation generator for JavaScript.
     
     After all the Grunt plugins are installed successfully, all the modules will be in the node_modules folder.
       
