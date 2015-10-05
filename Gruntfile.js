@@ -9,6 +9,7 @@ module.exports = function(grunt) {
         dest: 'dist/'
       }
     },
+	// Inline CSS and JS
     inline: {
       dist: {
         options: {
@@ -23,35 +24,6 @@ module.exports = function(grunt) {
         dest: 'dist/index.html'
       }
     },
-    // // Concatenation files
-    // concat: {
-    //   dist: {
-    //       src: ['src/css/*.css', 'src/css/!*.min.css'],
-    //       dest: 'dist/css/compiled.css'
-    //   }
-    // },
-    // // Minify css files
-    // cssmin: {
-    //   dist: {
-    //     files: [
-    //       {
-    //         expand: true,
-    //         cwd: 'dist/css',
-    //         src: ['compiled.css'],
-    //         dest: 'dist/css',
-    //         ext: '.min.css'
-    //        }
-    //     ]
-    //   }
-    // },
-    // // Make sure index.html file loads the new compiled CSS
-    // processhtml: {
-    //   dist: {
-    //     files: {
-    //       'dist/index.html': ['src/index.html']
-    //     }
-    //   }
-    // },
     // Minify html files
     htmlmin: {
       options: {                                 // Target options
@@ -69,20 +41,6 @@ module.exports = function(grunt) {
           ]
       }
     },
-    // Minify js files
-    // uglify: {
-    //   dist: {
-    //     files: [
-    //       {
-    //         expand: true,
-    //         cwd: 'src/js',
-    //         src: '*.js',
-    //         dest: 'dist/js',
-    //         ext: '.min.js'
-    //       }
-    //     ]
-    //   }
-    // },
     // Minify images
     imagemin: {
       dynamic: {
@@ -98,27 +56,12 @@ module.exports = function(grunt) {
         }]
       }
     }
-  //   responsive_images: {
-  //   myTask: {
-  //     options: {},
-  //     files: {
-  //       'dist/views/images/pizzeria.png': 'src/views/images/pizzeria.png'
-  //     }
-  //   }
-  // }
   });
   // Load the plugins
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-inline');
-  // grunt.loadNpmTasks('grunt-uncss');
-  // grunt.loadNpmTasks('grunt-contrib-concat');
-  // grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
-  // grunt.loadNpmTasks('grunt-processhtml');
-  // grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  // grunt.loadNpmTasks('grunt-responsive-images');
   // Default tasks.
-  // grunt.registerTask('default', ['copy', 'concat', 'cssmin', 'processhtml', 'htmlmin', 'uglify', 'imagemin']);
   grunt.registerTask('default', ['copy', 'inline', 'htmlmin', 'imagemin']);
 };
